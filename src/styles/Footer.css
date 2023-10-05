@@ -1,0 +1,46 @@
+.left-block-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.g-container-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0.8rem;
+}
+
+.links-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 25px;
+  justify-content: end;
+  align-items: start;
+}
+
+.logo-social {
+  display: flex;
+  gap: 15px;
+}
+
+.logo-social img {
+  width: 32px;
+  height: 32px;
+}
+
+.insta:hover {
+  color: #db3753;
+}
+
+.wttj:hover {
+  color: #db3753;
+}
+
+.product-footer-bg-black {
+  background-color: #171717;
+  & p,
+  a {
+    filter: invert();
+  }
+}

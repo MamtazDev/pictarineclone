@@ -1,0 +1,16 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e6eef0;
+  border-radius: 0.4em;
+  padding: 0 1rem;
+  & h2 {
+    font-size: 37px;
+  }
+  & img {
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+  }
+}

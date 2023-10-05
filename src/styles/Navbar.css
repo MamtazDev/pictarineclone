@@ -1,0 +1,41 @@
+.container-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 0.8rem;
+}
+
+.links {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.pictarinesGroupe {
+  width: 1130px;
+  height: 740px;
+  inset: 0px;
+  object-fit: cover;
+}
+
+.xplore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 9rem;
+}
+
+.xplore-title {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
+}
+
+.creatifs-title {
+  color: #db3753;
+  font-weight: 800;
+  margin-left: 2rem;
+}
