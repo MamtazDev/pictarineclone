@@ -1,4 +1,5 @@
 import "../styles/Home.css";
+import { Link } from "react-router-dom";
 import img6 from "../assets/Img/img6.webp";
 import img2 from "../assets/Img/img2.webp";
 import img3 from "../assets/Img/img3.webp";
@@ -69,7 +70,9 @@ function Home() {
             droit à l&apos;erreur chez Pictarine, et surtout on est jamais
             seul.e pour se relever.
           </p>
-          <button className="button-picta">Découvre la Picta Life</button>
+          <Link to={"/pictalife"} className="button-picta">
+            Découvre la Picta Life
+          </Link>
         </div>
       </div>
       <div className="g-container-business">
@@ -99,9 +102,9 @@ function Home() {
       <div className="g-discover-app">
         <div className="discover-app">
           <h2>Découvre nos apps et nos projets d&apos;exploration</h2>
-          <div>
-            <button className="button-picta">Let&apos;s Go !</button>
-          </div>
+          <Link to={"/product"} className="button-picta">
+            Let&apos;s Go !
+          </Link>
         </div>
       </div>
       <div className="style_background_waves">
@@ -194,6 +197,7 @@ function Home() {
                   img={data.img}
                   logo={data.logo}
                   text={data.text}
+                  link={data.link}
                 />
               );
             })}

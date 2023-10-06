@@ -90,7 +90,12 @@ function Product() {
       <div className="g-container-text-btn-website">
         <div className="text-btn-website">
           <h2>Viens voir à quoi ça ressemble !</h2>
-          <button className="button-picta">Notre site web</button>
+          <Link
+            to={"https://pictaphoto.com/walgreens"}
+            className="button-picta"
+          >
+            Notre site web
+          </Link>
         </div>
       </div>
       <div className="g-container-block-3">

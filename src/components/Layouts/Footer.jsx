@@ -44,6 +44,14 @@ function Footer({ isProductPage }) {
             <Link to={"/Partnerships"}>Partnerships</Link>
             <Link to={"/RejoinsNous"}>Rejoins-nous</Link>
           </div>
+          <div className="container-trad-footer">
+            <img
+              src="https://pictarine.com/menu/en.png"
+              className="american-flag"
+              alt="icone du drapeau américain"
+            />
+            <p>Passer en version anglais</p>
+          </div>
         </div>
       </div>
     </>

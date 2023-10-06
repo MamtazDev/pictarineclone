@@ -1,7 +1,7 @@
 .container-links {
   display: flex;
   justify-content: space-between;
-  padding: 3.5rem 0.8rem;
+  padding: 3.5rem 3.5rem;
 }
 
 .links {
@@ -21,7 +21,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 9rem;
+  align-items: center;
+  & p {
+    width: 69%;
+  }
 }
 
 .xplore-title {
@@ -38,4 +41,10 @@
   color: #db3753;
   font-weight: 800;
   margin-left: 2rem;
+}
+
+.french-flag {
+  width: 38px;
+  height: 32px;
+  cursor: pointer;
 }
