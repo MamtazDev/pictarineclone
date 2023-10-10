@@ -21,7 +21,7 @@ function Home() {
         <div className="xplore">
           <h2 className="xplore-title">
             Explorateurs
-            <span className="creatifs-title">Créatifs</span>
+            <span className="creatifs-title">créatifs</span>
           </h2>
           <p>
             Une team exceptionnelle, une pincée d&apos;international, on rajoute

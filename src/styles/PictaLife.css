@@ -14,9 +14,9 @@
 .container-block-1-pictalife {
   display: flex;
   justify-content: space-between;
-  padding: 3.5rem 3.5rem 0;
+  padding: 3.5rem 25rem 0;
   & img {
-    width: 1117px;
+    width: 1000px;
     height: 822px;
     object-fit: cover;
   }
@@ -33,7 +33,7 @@
 
 .container-block-2-pictalife {
   display: flex;
-  padding: 10rem 3.5rem 0;
+  padding: 10rem 25rem 0;
   justify-content: space-between;
   gap: 50px;
 }
@@ -70,20 +70,19 @@
 }
 
 .block-3-pictalife {
-  width: 50%;
-  padding: 2rem 3.5rem;
+  width: 70%;
+  padding: 2rem 25rem;
 }
 
 .middle-block-4-pictalife {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 2.5rem;
 }
 
 .block-4-pictalife {
   display: flex;
-  padding: 3.5rem 3.5rem;
+  padding: 3.5rem 25rem;
 }
 
 .post-it-fire {
@@ -99,9 +98,58 @@
 .block-5-pictalife {
   display: flex;
   gap: 50px;
-  padding: 3.5rem;
+  padding: 3.5rem 25rem;
   & img {
     width: 100%;
     height: 400px;
   }
+}
+
+.block-6-pictalife {
+  display: flex;
+  padding: 3.5rem 25rem;
+  gap: 50px;
+  & img {
+    width: 377px;
+    height: 400px;
+  }
+}
+
+.discover-by-ceo {
+  width: 35%;
+}
+
+.carousel-1-pictalife {
+  font-size: 60px;
+  padding: 3.5rem 25rem;
+}
+
+.carousel-2-pictalife {
+  font-size: 60px;
+  padding: 3.5rem 25rem;
+}
+
+.block-7-pictalife {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  & h2 {
+    font-family: Mulish;
+    font-weight: 500;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1;
+  }
+}
+
+.picta-app {
+  color: #db3753;
+  font-size: 80px;
+  font-family: Mulish;
+  font-weight: 900;
 }

@@ -1,19 +1,36 @@
 import Plogo from "../../assets/Img/Plogo.png";
 import "../../styles/Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ isTechPage }) {
+  const navbarClasses = isTechPage
+    ? "container-links container-links-bg-black"
+    : "container-links";
   return (
-    <div className="container-links" id="anchor">
+    <div className={navbarClasses}>
       <img className="Logo" src={Plogo} alt="Logo de Pictarine" />
       <div className="links">
-        <Link to={"/Home"}>Home</Link>
-        <Link to={"/Product"}>Notre Produit</Link>
-        <Link to={"/PictaLife"}>Picta life</Link>
-        <Link to={"/Team"}>La Team</Link>
-        <Link to={"/Tech"}>La Tech</Link>
-        <Link to={"/Partnerships"}>Partnerships</Link>
-        <Link to={"/RejoinsNous"}>Rejoins-nous</Link>
+        <NavLink to={"/Home"} ClassName="active-link">
+          Home
+        </NavLink>
+        <NavLink to={"/Product"} ClassName="active-link">
+          Notre Produit
+        </NavLink>
+        <NavLink to={"/PictaLife"} ClassName="active-link">
+          Picta life
+        </NavLink>
+        <NavLink to={"/Team"} ClassName="active-link">
+          La Team
+        </NavLink>
+        <NavLink to={"/Tech"} ClassName="active-link">
+          La Tech
+        </NavLink>
+        <NavLink to={"/Partnerships"} ClassName="active-link">
+          Partnerships
+        </NavLink>
+        <NavLink to={"/RejoinsNous"} ClassName="active-link">
+          Rejoins-nous
+        </NavLink>
         <img
           className="french-flag"
           src="https://pictarine.com/menu/fr.png"

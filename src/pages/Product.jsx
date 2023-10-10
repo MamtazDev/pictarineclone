@@ -12,7 +12,8 @@ function Product() {
       <div className="g-container-block-1">
         <div className="g-container-block-left">
           <h2 className="h2-block-1">
-            Notre produit phare <span className="picta-app">the Picta App</span>
+            Notre produit phare{" "}
+            <span className="picta-app-italic">the Picta App</span>
           </h2>
           <p>
             Notre main product ? Une application qui permet de modifier et

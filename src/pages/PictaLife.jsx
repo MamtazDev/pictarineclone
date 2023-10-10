@@ -41,7 +41,9 @@ function PictaLife() {
           alt="Photo de groupe"
         />
       </div>
-      <div className="carousel"></div>
+      <div className="carousel-1-pictalife">
+        <p>ICI LE FUTUR CAROUSEL</p>
+      </div>
       <div className="g-container-ls-block-2">
         <p>+ sur nos réseaux</p>
         <div className="logo-social">
@@ -111,6 +113,40 @@ function PictaLife() {
             Seul on va plus vite, mais ensemble on va plus loin !
           </p>
         </div>
+      </div>
+      <div className="block-6-pictalife">
+        <img
+          src="https://a.storyblok.com/f/189744/819x961/85eafdd7c0/impossible-possible-anim.gif/m/1200x0"
+          alt=""
+        />
+        <div className="discover-by-ceo">
+          <h2 className="last-seminar">Making the impossible possible</h2>
+          <p>
+            Parce qu’il nous a fallu beaucoup d’audace, de débrouillardise et de
+            résilience pour en arriver là ! Et le mieux placé pour expliquer
+            notre parcours et nos ambitions c’est Guillaume, notre CEO.
+          </p>
+        </div>
+        <iframe
+          width="879"
+          height="415"
+          src="https://www.youtube.com/embed/AwrZoNgM6HU?si=-vEVAVMpw7JCuI58"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div className="carousel-2-pictalife">
+        <p>ICI LE FUTUR CAROUSEL</p>
+      </div>
+      <div className="block-7-pictalife">
+        <h2>
+          Ça donne envie ?<br></br>
+          <span className="picta-app">Rejoins-nous!</span>
+        </h2>
+        <Link className="button-picta" to={"/rejoinsnous"}>
+          Nos postes ouverts
+        </Link>
       </div>
     </>
   );

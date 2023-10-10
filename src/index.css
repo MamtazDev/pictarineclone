@@ -19,7 +19,6 @@
 }
 
 a {
-  font-weight: 500;
   color: black;
   text-decoration: inherit;
 }
@@ -30,6 +29,10 @@ a:visited {
 a:hover {
   color: #db3753;
   transition: all 0.2s ease-in-out;
+}
+
+a:focus {
+  font-weight: 800;
 }
 
 h1 {

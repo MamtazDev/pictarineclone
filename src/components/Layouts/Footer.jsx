@@ -6,13 +6,17 @@ import wttj from "../../assets/Img/welcometothejungle logo.svg";
 import "../../styles/Home.css";
 import "../../styles/Footer.css";
 
-function Footer({ isProductPage }) {
+function Footer({ isProductPage, isTechPage }) {
   const footerClasses = isProductPage
     ? "g-container-footer product-footer-bg-black"
     : "g-container-footer";
+
+  const navbarClasses = isTechPage
+    ? " container-links container-links-bg-black"
+    : " container-links";
   return (
     <>
-      <div className={footerClasses}>
+      <div className={footerClasses + navbarClasses}>
         <div className="left-block-footer">
           <img src={Plogo} className="Logo" alt="logo de Pictarine" />
           <div className="g-container-infos">

@@ -1,5 +1,4 @@
-import React from "react";
-
+import "../styles/Tech.css";
 function Tech() {
   return <></>;
 }
