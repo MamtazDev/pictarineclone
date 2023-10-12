@@ -6,9 +6,12 @@ import stackinfos from "../utils/stackinfos.json";
 import StackCard from "../components/StackCard";
 import Description from "../components/Description";
 import description from "../utils/description.json";
+import problemsolvers from "../utils/problemsolvers.json";
+import ProblemSolvers from "../components/ProblemSolvers";
 import { Link } from "react-router-dom";
 
 function Tech() {
+  const LastDataCard = problemsolvers[6];
   const location = useLocation();
   const isTechPage = location.pathname === "/Tech";
   const tentaculaire = "/* --------------- Un exemple --------------- */";
@@ -155,7 +158,57 @@ function Tech() {
       </div>
       <div className="g-container-problemsolvers">
         <h2 className="sobusiness">We are problem solvers!</h2>
-        <div className="g-container-cards-problemsolvers"></div>
+        <div className="g-container-cards-problemsolvers">
+          <div className="first-card-problemsolvers">
+            <h3>Notre lab</h3>
+            <p>
+              Chez Pictarine on adore le challenge de créer nos propres outils
+              qui répondent exactement à nos besoins. L’avantage de créer plutôt
+              qu’utiliser une solution existante ? Le challenge et la praticité
+              ! Overview de nos outils handmade et parfaitement tailored pour
+              nos besoins.
+            </p>
+          </div>
+          {problemsolvers.slice(0, 6).map((data, id) => {
+            return (
+              <ProblemSolvers
+                key={id}
+                logo={data.logo}
+                title={data.title}
+                text={data.text}
+              />
+            );
+          })}
+          <div></div>
+          <ProblemSolvers
+            logo={LastDataCard.logo}
+            title={LastDataCard.title}
+            text={LastDataCard.text}
+          />
+          <div className="container-problemsolvers-p">
+            <p>
+              Et toi, quelle app rêves-tu de développer ? Le Lab Picta t’est
+              ouvert !
+            </p>
+          </div>
+          <div className="last-block-problemsolvers">
+            <p className="text-techno">
+              Découvre en détail notre App et nos explos Produits
+            </p>
+            <Link to={"/Product"} className="button-picta">
+              Nos produits
+            </Link>
+          </div>
+        </div>
+        <div className="block-7-pictalife">
+          <h2>
+            Ça donne envie ?<br></br>
+            <span className="picta-app">Rejoins-nous!</span>
+          </h2>
+          <Link className="button-picta" to={"/rejoinsnous"}>
+            Nos postes ouverts
+          </Link>
+        </div>
       </div>
     </div>
   );

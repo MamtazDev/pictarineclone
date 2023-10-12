@@ -1,9 +1,15 @@
-import React from 'react'
+import "../styles/ProblemSolvers.css";
 
-function ProblemSolvers() {
-    return (
-        
-    )
+function ProblemSolvers({ logo, title, text }) {
+  return (
+    <div className="container-problemsolvers">
+      <div className="header-container">
+        <img src={logo} alt="" />
+        <span>{title}</span>
+      </div>
+      <p>{text}</p>
+    </div>
+  );
 }
 
-export default ProblemSolvers
+export default ProblemSolvers;
