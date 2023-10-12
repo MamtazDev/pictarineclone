@@ -85,7 +85,7 @@ function Home() {
             d’innover et d’explorer des nouvelles idées de produits.
           </p>
           <div className="container-number">
-            {businessinfos.map((data, id) => {
+            {businessinfos.slice(0, 4).map((data, id) => {
               return (
                 <BusinessInfos
                   key={id}

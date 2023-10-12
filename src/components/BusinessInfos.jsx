@@ -1,9 +1,15 @@
+import { useLocation } from "react-router";
 import "../styles/Home.css";
 
 function BusinessInfos({ number, title, text }) {
+  const location = useLocation();
+  const isTechPage = location.pathname === "/Tech";
+  const numberClasses = isTechPage
+    ? "number-business number-business-tech"
+    : "number-business";
   return (
     <div className="card-number-business">
-      <p className="number-business">{number}</p>
+      <p className={numberClasses}>{number}</p>
       <div className="sentences-on-number">
         <p className="title-business">{title}</p>
         <p className="sentence-business">{text}</p>
