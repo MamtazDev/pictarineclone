@@ -24,14 +24,14 @@
 
 .container-xplore {
   display: flex;
-  padding: 0 25rem 10rem;
+  padding: 0 22rem 10rem;
   gap: 50px;
 }
 
 .g-pictarinesvision {
   display: flex;
   justify-content: space-between;
-  padding: 0 25rem 100px 25rem;
+  padding: 0 22rem 100px 22rem;
 }
 
 .g-presentation-woman {
@@ -126,7 +126,7 @@
 
 .g-container-business {
   display: flex;
-  padding: 0 25rem 6rem;
+  padding: 0 22rem 6rem;
 }
 
 .container-number {
@@ -157,11 +157,11 @@
 .g-container-meetup {
   display: flex;
   gap: 50px;
-  padding: 100px 25rem 100px 25rem;
+  padding: 100px 22rem 100px 22rem;
 }
 
 .g-findus {
-  padding: 0 25rem;
+  padding: 0 22rem;
 }
 
 .img11 {
@@ -239,14 +239,6 @@ input {
   align-self: center;
   padding-left: 25px;
   font-family: MulishButton;
-}
-
-.form button {
-  width: 20%;
-  align-self: flex-end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .g-container-cards {

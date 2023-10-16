@@ -6,7 +6,11 @@
 .container-links {
   display: flex;
   justify-content: space-between;
-  padding: 3.5rem 25rem;
+  padding: 3.5rem 22rem;
+}
+
+.active-link {
+  font-weight: 900 !important;
 }
 
 .links {
@@ -59,6 +63,10 @@
   background-color: #171717;
   & p,
   a {
-    filter: invert();
+    color: white !important;
+    font-weight: 600;
+  }
+  & a:hover {
+    color: #db3753 !important;
   }
 }

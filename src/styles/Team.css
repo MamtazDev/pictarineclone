@@ -1,5 +1,5 @@
 .first-block-team {
-  padding: 0 25rem;
+  padding: 0 22rem;
   & p {
     margin-top: 3rem;
   }
@@ -11,7 +11,7 @@
 }
 
 .btn-category {
-  padding: 3rem 25rem;
+  padding: 3rem 22rem;
   display: flex;
   gap: 10px;
 

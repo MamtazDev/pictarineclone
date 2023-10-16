@@ -14,6 +14,10 @@ function Footer({ isProductPage, isTechPage }) {
   const navbarClasses = isTechPage
     ? " container-links container-links-bg-black"
     : " container-links";
+
+  const logoClasses = isTechPage
+    ? "logo-social logo-social-black"
+    : "logo-social";
   return (
     <>
       <div className={footerClasses + navbarClasses}>
@@ -24,7 +28,7 @@ function Footer({ isProductPage, isTechPage }) {
             <p>46 rue Marco Polo</p>
             <p>31670 Labège</p>
           </div>
-          <div className="logo-social">
+          <div className={logoClasses}>
             <Link to={"https://www.instagram.com/pictarine/"}>
               <img src={insta} />
             </Link>

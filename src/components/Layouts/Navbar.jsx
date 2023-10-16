@@ -1,34 +1,64 @@
 import Plogo from "../../assets/Img/Plogo.png";
 import "../../styles/Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Navbar({ isTechPage }) {
+  const location = useLocation();
+
   const navbarClasses = isTechPage
     ? "container-links container-links-bg-black"
     : "container-links";
+
+  const isDefaultActive = (path) => {
+    return (
+      location.pathname === path ||
+      (path === "/Home" && location.pathname === "/")
+    );
+  };
   return (
     <div className={navbarClasses}>
       <img className="Logo" src={Plogo} alt="Logo de Pictarine" />
       <div className="links">
-        <NavLink to={"/Home"} ClassName="active-link">
+        <NavLink
+          to={"/Home"}
+          className={isDefaultActive("/Home") ? "active-link" : ""}
+        >
           Home
         </NavLink>
-        <NavLink to={"/Product"} ClassName="active-link">
+        <NavLink
+          to={"/Product"}
+          className={location.pathname === "/Product" ? "active-link" : ""}
+        >
           Notre Produit
         </NavLink>
-        <NavLink to={"/PictaLife"} ClassName="active-link">
+        <NavLink
+          to={"/PictaLife"}
+          className={location.pathname === "/PictaLife" ? "active-link" : ""}
+        >
           Picta life
         </NavLink>
-        <NavLink to={"/Team"} ClassName="active-link">
+        <NavLink
+          to={"/Team"}
+          className={location.pathname === "/Team" ? "active-link" : ""}
+        >
           La Team
         </NavLink>
-        <NavLink to={"/Tech"} ClassName="active-link">
+        <NavLink
+          to={"/Tech"}
+          className={location.pathname === "/Tech" ? "active-link" : ""}
+        >
           La Tech
         </NavLink>
-        <NavLink to={"/Partnerships"} ClassName="active-link">
+        <NavLink
+          to={"/Partnerships"}
+          className={location.pathname === "/Partnerships" ? "active-link" : ""}
+        >
           Partnerships
         </NavLink>
-        <NavLink to={"/RejoinsNous"} ClassName="active-link">
+        <NavLink
+          to={"/RejoinsNous"}
+          className={location.pathname === "/RejoinsNous" ? "active-link" : ""}
+        >
           Rejoins-nous
         </NavLink>
         <img

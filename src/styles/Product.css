@@ -18,7 +18,7 @@
 
 .g-container-block-1 {
   display: flex;
-  padding: 6rem 25rem 0;
+  padding: 6rem 22rem 0;
 }
 
 .g-container-block-left {
@@ -88,7 +88,7 @@
 /* second block from up */
 
 .g-container-block-2 {
-  padding: 8rem 25rem 0;
+  padding: 8rem 22rem 0;
   display: flex;
   gap: 55px;
 }
@@ -132,7 +132,7 @@
 .h2-block-3 {
   font-size: 70px;
   font-family: MulishButton;
-  padding: 6rem 25rem 7rem 25rem;
+  padding: 6rem 22rem 7rem 22rem;
   line-height: 1;
   color: white;
   display: flex;
@@ -162,7 +162,7 @@
 
 .g-container-leftRight-block-3 {
   display: flex;
-  padding: 0 25rem;
+  padding: 0 22rem;
   gap: 40px;
 }
 

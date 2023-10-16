@@ -7,7 +7,7 @@
 .g-container-footer {
   display: flex;
   justify-content: space-between;
-  padding: 8rem 25rem;
+  padding: 8rem 22rem;
 }
 
 .links-footer {
@@ -53,4 +53,12 @@
     width: 47px;
     height: 40px;
   }
+}
+
+.logo-social-black {
+  filter: invert();
+}
+
+.hover-svg-path:hover {
+  fill: #db3753;
 }

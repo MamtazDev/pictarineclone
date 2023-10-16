@@ -14,7 +14,7 @@
 .container-block-1-pictalife {
   display: flex;
   justify-content: space-between;
-  padding: 3.5rem 25rem 0;
+  padding: 3.5rem 22rem 0;
   & img {
     width: 1000px;
     height: 822px;
@@ -33,7 +33,7 @@
 
 .container-block-2-pictalife {
   display: flex;
-  padding: 10rem 25rem 0;
+  padding: 10rem 22rem 0;
   justify-content: space-between;
   gap: 50px;
 }
@@ -71,7 +71,7 @@
 
 .block-3-pictalife {
   width: 70%;
-  padding: 2rem 25rem;
+  padding: 2rem 22rem;
 }
 
 .middle-block-4-pictalife {
@@ -82,7 +82,7 @@
 
 .block-4-pictalife {
   display: flex;
-  padding: 3.5rem 25rem;
+  padding: 3.5rem 22rem;
 }
 
 .post-it-fire {
@@ -107,7 +107,7 @@
 
 .block-6-pictalife {
   display: flex;
-  padding: 3.5rem 25rem;
+  padding: 3.5rem 22rem;
   gap: 50px;
   & img {
     width: 377px;
@@ -121,12 +121,12 @@
 
 .carousel-1-pictalife {
   font-size: 60px;
-  padding: 3.5rem 25rem;
+  padding: 3.5rem 22rem;
 }
 
 .carousel-2-pictalife {
   font-size: 60px;
-  padding: 3.5rem 25rem;
+  padding: 3.5rem 22rem;
 }
 
 .block-7-pictalife {
