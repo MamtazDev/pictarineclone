@@ -1,6 +1,9 @@
 import "../styles/RejoinsNous.css";
 import SliderRecrutment from "../components/SliderRecrutment";
 import sliderrecrutment from "../utils/sliderrecrutment.json";
+import { Link } from "react-router-dom";
+import CarouselMeetTeam from "../components/CarouselMeetTeam";
+import SimpleSlider from "../components/CarouselMeetTeam";
 function RejoinsNous() {
   return (
     <div className="g-container-padding">
@@ -158,6 +161,24 @@ function RejoinsNous() {
               );
             })}
           </div>
+        </div>
+      </div>
+      <div className="g-discover-rejoinsnous">
+        <div className="discover-rejoinsnous">
+          <h2>
+            Découvre ce qui t&apos;attend au quotidien chez Pictarine par ici !
+          </h2>
+          <Link to={"/Pictalife"} className="button-picta">
+            La Picta Life
+          </Link>
+        </div>
+      </div>
+      <div className="g-carousel-meetteam">
+        <h2 className="title-block-2">
+          En attendant, rencontre l&apos;équipe !
+        </h2>
+        <div className="carousel-meeteam">
+          <SimpleSlider />
         </div>
       </div>
     </div>

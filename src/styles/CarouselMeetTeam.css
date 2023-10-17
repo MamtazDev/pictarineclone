@@ -1,0 +1,15 @@
+.custom-slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-prev-arrow {
+  left: 10px;
+  cursor: pointer;
+}
+
+.custom-next-arrow {
+  right: 10px;
+  cursor: pointer;
+}

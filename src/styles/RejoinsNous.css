@@ -249,3 +249,28 @@ form {
   left: 0;
   z-index: 1;
 }
+
+.g-discover-rejoinsnous {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.discover-rejoinsnous {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 4rem;
+  font-family: MulishButton;
+  gap: 20px;
+  width: 63%;
+  font-size: 27px;
+}
+
+.g-carousel-meetteam {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+}
