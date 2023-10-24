@@ -2,7 +2,6 @@ import "../styles/RejoinsNous.css";
 import SliderRecrutment from "../components/SliderRecrutment";
 import sliderrecrutment from "../utils/sliderrecrutment.json";
 import { Link } from "react-router-dom";
-import CarouselMeetTeam from "../components/CarouselMeetTeam";
 import SimpleSlider from "../components/CarouselMeetTeam";
 function RejoinsNous() {
   return (
@@ -177,10 +176,8 @@ function RejoinsNous() {
         <h2 className="title-block-2">
           En attendant, rencontre l&apos;équipe !
         </h2>
-        <div className="carousel-meeteam">
-          <SimpleSlider />
-        </div>
       </div>
+      <SimpleSlider />
     </div>
   );
 }

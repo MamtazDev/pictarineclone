@@ -1,15 +1,39 @@
-.custom-slick-arrow {
+.carousel-container {
+  margin-top: 40px;
+}
+
+.arrow-next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 97%;
+  z-index: 20;
+  cursor: pointer;
+  & svg {
+    width: 50px;
+    height: 50px;
+    color: #007aff;
+    font-weight: 300;
+  }
 }
 
-.custom-prev-arrow {
-  left: 10px;
+.arrow-prev {
+  position: absolute;
   cursor: pointer;
+  top: 50%;
+  right: 97%;
+  z-index: 20;
+  & svg {
+    width: 50px;
+    height: 50px;
+    color: #007aff;
+  }
 }
 
-.custom-next-arrow {
-  right: 10px;
-  cursor: pointer;
+.slick-list {
+  padding: 0 30%;
+}
+
+iframe {
+  height: 500px;
+  width: 650px;
 }
