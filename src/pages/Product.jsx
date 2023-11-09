@@ -12,7 +12,7 @@ function Product() {
       <div className="g-container-block-1">
         <div className="g-container-block-left">
           <h2 className="h2-block-1">
-            Notre produit phare{" "}
+            Notre produit phare<br></br>
             <span className="picta-app-italic">the Picta App</span>
           </h2>
           <p>

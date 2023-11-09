@@ -4,7 +4,7 @@
 }
 
 .g-container-padding {
-  padding: 3rem 22rem;
+  padding: 3rem 0;
 }
 
 .g-first-block-partnerships {
@@ -273,4 +273,43 @@ form {
   margin-top: 10rem;
   display: flex;
   flex-direction: column;
+}
+
+.g-container-last-rejoinsnous {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0 5rem;
+}
+
+.left-block-last-rejoinsnous {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.right-block-last-rejoinsnous {
+  padding-left: 8rem;
+  display: flex;
+}
+
+.block-diffpicta {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.up-img-rejoinsnous {
+  height: 1000px;
+  width: 100%;
+}
+
+.down-img-rejoinsnous {
+  height: 100%;
+  width: 100%;
+}
+
+.learnmore-joinus {
+  display: flex;
+  gap: 5px;
+  color: #db3753 !important;
 }

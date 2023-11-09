@@ -7,6 +7,20 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.g-container-layout {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1660px) 1fr;
+}
+
+.g-container-layout > * {
+  grid-column: 2;
+}
+
+.g-content-layout {
+  max-width: 1660px;
+  margin: 0 auto;
+}
+
 img {
   object-fit: cover;
 }

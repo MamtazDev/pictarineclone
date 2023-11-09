@@ -12,10 +12,19 @@
 }
 
 .g-container-tech {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1660px) 1fr;
   background-color: #171717;
-  padding: 0 22rem;
   color: white;
-  font-family: Mulish;
+}
+
+.g-container-tech > * {
+  grid-column: 2;
+}
+
+.g-content {
+  max-width: 1660px;
+  margin: 0 auto;
 }
 
 .first-block-tech {

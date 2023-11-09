@@ -1,8 +1,5 @@
-.first-block-team {
-  padding: 0 22rem;
-  & p {
-    margin-top: 3rem;
-  }
+.first-block-team p {
+  margin-top: 3rem;
 }
 
 .img-picta-palma {
@@ -11,7 +8,7 @@
 }
 
 .btn-category {
-  padding: 3rem 22rem;
+  padding: 3rem 0;
   display: flex;
   gap: 10px;
 

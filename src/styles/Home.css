@@ -24,14 +24,13 @@
 
 .container-xplore {
   display: flex;
-  padding: 0 22rem 10rem;
   gap: 50px;
 }
 
 .g-pictarinesvision {
   display: flex;
   justify-content: space-between;
-  padding: 0 22rem 100px 22rem;
+  margin-top: 8rem;
 }
 
 .g-presentation-woman {
@@ -52,6 +51,7 @@
 .g-discover-app {
   display: flex;
   justify-content: center;
+  margin-top: 8rem;
 }
 
 .presentation-woman {
@@ -126,7 +126,7 @@
 
 .g-container-business {
   display: flex;
-  padding: 0 22rem 6rem;
+  margin-top: 8rem;
 }
 
 .container-number {
@@ -147,7 +147,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 4rem;
   font-family: MulishButton;
   gap: 20px;
   width: 40%;
@@ -157,17 +156,19 @@
 .g-container-meetup {
   display: flex;
   gap: 50px;
-  padding: 100px 22rem 100px 22rem;
+  margin-top: 8rem;
+  padding-top: 8rem;
 }
 
 .g-findus {
-  padding: 0 22rem;
+  margin-top: 8rem;
 }
 
 .img11 {
   width: 100%;
   height: 510px;
   object-fit: cover;
+  margin-top: 2rem;
 }
 .img12 {
   width: 100%;
@@ -272,6 +273,7 @@ input {
 .logo-card-apple {
   width: 267px;
   height: 38px;
+  object-fit: contain;
 }
 
 .findus {
@@ -307,5 +309,16 @@ input {
 }
 
 .style_background_waves {
-  background-color: #f8f8f8;
+  position: relative;
+}
+
+.style_background_waves::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: auto;
+  width: 100vw;
+  height: 100%;
+  background-color: #ba2626;
+  z-index: -1;
 }
