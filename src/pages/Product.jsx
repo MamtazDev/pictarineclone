@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Product() {
   return (
     <>
-      <div className="g-container-block-1">
+      <div className="g-container-block-1 max-width">
         <div className="g-container-block-left">
           <h2 className="h2-block-1">
             Notre produit phare<br></br>
@@ -65,7 +65,7 @@ function Product() {
           alt="Gif d'un smartphone"
         />
       </div>
-      <div className="g-container-block-2">
+      <div className="g-container-block-2 max-width">
         <div className="left-block-2">
           <h2 className="title-block-2">
             Mais qu&apos;est ce qu&apos;on fait chez Pictarine en fait ?
@@ -100,41 +100,43 @@ function Product() {
         </div>
       </div>
       <div className="g-container-block-3">
-        <h2 className="h2-block-3">
-          Recherche & Développement
-          <span className="span-block-3">nos explorations</span>
-        </h2>
-        <div className="g-container-leftRight-block-3">
-          <div className="left-block-3">
-            {description.slice(0, 2).map((data, id) => {
-              return (
+        <div className="g-container-width">
+          <h2 className="h2-block-3">
+            Recherche & Développement
+            <span className="span-block-3">nos explorations</span>
+          </h2>
+          <div className="g-container-leftRight-block-3">
+            <div className="left-block-3">
+              {description.slice(0, 2).map((data, id) => {
+                return (
+                  <Description
+                    key={id}
+                    img={data.img}
+                    title={data.title}
+                    text={data.text}
+                  />
+                );
+              })}
+            </div>
+            <div className="right-block-3">
+              <h2>Parce qu&apos;on ne cesse d&apos;innover !</h2>
+              {description[2] && (
                 <Description
-                  key={id}
-                  img={data.img}
-                  title={data.title}
-                  text={data.text}
+                  key={description[2].id}
+                  img={description[2].img}
+                  title={description[2].title}
+                  text={description[2].text}
                 />
-              );
-            })}
-          </div>
-          <div className="right-block-3">
-            <h2>Parce qu&apos;on ne cesse d&apos;innover !</h2>
-            {description[2] && (
-              <Description
-                key={description[2].id}
-                img={description[2].img}
-                title={description[2].title}
-                text={description[2].text}
-              />
-            )}
-            <div className="techno">
-              <h2 className="text-techno">
-                On a aussi créé pleins d&apos;outils pour faciliter la vie de
-                nos devs !
-              </h2>
-              <Link to={"/Tech"} className="button-picta-dark">
-                Par ici les techos
-              </Link>
+              )}
+              <div className="techno">
+                <h2 className="text-techno">
+                  On a aussi créé pleins d&apos;outils pour faciliter la vie de
+                  nos devs !
+                </h2>
+                <Link to={"/Tech"} className="button-picta-dark">
+                  Par ici les techos
+                </Link>
+              </div>
             </div>
           </div>
         </div>

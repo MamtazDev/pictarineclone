@@ -2,7 +2,7 @@ import "../styles/Team.css";
 import { Link } from "react-router-dom";
 function Team() {
   return (
-    <>
+    <div className="max-width">
       <div className="first-block-team">
         <img
           className="img-picta-palma"
@@ -35,7 +35,7 @@ function Team() {
           Nos postes ouverts
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 

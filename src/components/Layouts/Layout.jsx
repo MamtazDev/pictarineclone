@@ -7,12 +7,10 @@ const Layout = () => {
   const isProductPage = location.pathname === "/Product";
   const isTechPage = location.pathname === "/Tech";
   return (
-    <div className="g-container-layout">
-      <div className="g-content-layout">
-        <Navbar isTechPage={isTechPage} />
-        <Outlet />
-        <Footer isProductPage={isProductPage} isTechPage={isTechPage} />
-      </div>
+    <div>
+      <Navbar isTechPage={isTechPage} />
+      <Outlet />
+      <Footer isProductPage={isProductPage} isTechPage={isTechPage} />
     </div>
   );
 };

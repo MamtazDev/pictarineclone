@@ -5,7 +5,7 @@ import form from "../assets/Img/form.png";
 import "../styles/PartnerShips.css";
 function Partnerships() {
   return (
-    <>
+    <div className="max-width">
       <div className="g-container-padding">
         <div className="g-first-block-partnerships">
           <div className="first-block-partnerships">
@@ -238,7 +238,7 @@ function Partnerships() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

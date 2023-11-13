@@ -29,15 +29,7 @@
   height: 32px;
 }
 
-.insta:hover {
-  color: #db3753;
-}
-
-.wttj:hover {
-  color: #db3753;
-}
-
-.product-footer-bg-black {
+.g-container-footer.product-footer-bg-black {
   background-color: #171717;
   & p,
   a {
@@ -57,8 +49,4 @@
 
 .logo-social-black {
   filter: invert();
-}
-
-.hover-svg-path:hover {
-  fill: #db3753;
 }

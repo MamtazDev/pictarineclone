@@ -51,7 +51,7 @@
 .g-discover-app {
   display: flex;
   justify-content: center;
-  margin-top: 8rem;
+  margin: 8rem 0;
 }
 
 .presentation-woman {
@@ -157,7 +157,6 @@
   display: flex;
   gap: 50px;
   margin-top: 8rem;
-  padding-top: 8rem;
 }
 
 .g-findus {
@@ -268,6 +267,7 @@ input {
 .logo-card {
   width: 191px;
   height: 38px;
+  object-fit: contain;
 }
 
 .logo-card-apple {
@@ -308,17 +308,16 @@ input {
   cursor: pointer;
 }
 
-.style_background_waves {
-  position: relative;
+.style_background_width {
+  background-color: #f8f8f8;
+  width: 100%;
 }
 
-.style_background_waves::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: auto;
-  width: 100vw;
-  height: 100%;
-  background-color: #ba2626;
-  z-index: -1;
+.style_background_width > .g-container-width {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1660px) 1fr;
+}
+
+.style_background_width > .g-container-width > * {
+  grid-column: 2;
 }
