@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import CarouselTeam from "../components/CarouselTeam";
 function RejoinsNous() {
   return (
-    <>
+    <div className="max-width">
       <div className="g-container-padding">
         <div className="g-first-block-partnerships">
           <div className="first-block-partnerships">
@@ -229,7 +229,7 @@ function RejoinsNous() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

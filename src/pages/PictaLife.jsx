@@ -6,7 +6,7 @@ import wttj from "../assets/Img/welcometothejungle logo.svg";
 
 function PictaLife() {
   return (
-    <>
+    <div className="max-width">
       <div className="container-block-1-pictalife">
         <h2>
           C&apos;est ça, la<br></br>
@@ -137,7 +137,7 @@ function PictaLife() {
         ></iframe>
       </div>
       <div className="carousel-2-pictalife">
-        <p>ICI LE FUTUR CAROUSEL</p>
+        <p>ICI CAROUSEL</p>
       </div>
       <div className="block-7-pictalife">
         <h2>
@@ -148,7 +148,7 @@ function PictaLife() {
           Nos postes ouverts
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 
