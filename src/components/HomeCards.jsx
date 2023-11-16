@@ -6,7 +6,7 @@ function HomeCards({ img, logo, text, link }) {
     <div className="card-aboutus">
       <Link to={link}>
         <img className="pic-card" src={img} alt="Photo du CEO de Pictarine" />
-        <img className="logo-card" src={logo} alt="logo d'entreprises" />
+        <img className="logo-card my-4" src={logo} alt="logo d'entreprises" />
         <p>{text}</p>
       </Link>
     </div>

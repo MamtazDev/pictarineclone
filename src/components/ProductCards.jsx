@@ -2,14 +2,14 @@ import "../styles/ProductCards.css";
 
 function ProductCards({ img, title, text }) {
   return (
-    <div className="product-card">
+    <div className="product-card h-100">
       <h2>
         <span>
           <img src={img} alt="" />
         </span>
         {title}
       </h2>
-      <p>{text}</p>
+      <p className="fs-6">{text}</p>
     </div>
   );
 }
