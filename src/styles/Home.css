@@ -2,10 +2,12 @@
   font-family: Mulish;
   src: url(../fonts/Mulish-VariableFont_wght.ttf) format("truetype");
 }
+
 @font-face {
   font-family: MulishButton;
   src: url(../fonts/Mulish-Medium.ttf) format("truetype");
 }
+
 @font-face {
   font-family: MulishBold;
   src: url(../fonts/Mulish-Bold.ttf) format("truetype");
@@ -17,7 +19,7 @@
 
 .pictarinesGroupe {
   width: 100%;
-  height: 740px;
+  height: 500px;
   inset: 0px;
   object-fit: cover;
 }
@@ -42,6 +44,7 @@
   height: 424px;
   object-fit: cover;
 }
+
 .presentation-guy {
   width: 328px;
   height: 424px;
@@ -60,7 +63,7 @@
   object-fit: cover;
 }
 
-.text-pictarinesvision {
+/* .text-pictarinesvision {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -68,11 +71,12 @@
   padding-left: 50px;
   width: 32%;
   gap: 15px;
-}
+} */
 
 .h2-text-picarinesvision {
   font-weight: 700;
-  font-size: 39.5px;
+  font-size: 32px;
+  line-height: 45px;
   font-family: Mulish;
 }
 
@@ -85,12 +89,13 @@
 .button-picta {
   background-color: #db3753;
   border: 0.3rem solid #db3753;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   color: white;
   padding: 1.2rem 2.8rem;
   transition: all 0.2s ease-out;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: MulishButton;
+
   &:visited {
     color: white;
   }
@@ -100,6 +105,11 @@
   background-color: transparent;
   color: #db3753;
   transition: all 0.2s ease-in;
+}
+
+.button-picta.btn_picta {
+  font-size: 1rem;
+  padding: .8rem 1rem;
 }
 
 .sobusiness {
@@ -119,13 +129,18 @@
   color: #e6eef0;
 }
 
+@media(max-width: 550px) {
+  .number-business {
+    font-size: 6rem;
+  }
+}
+
 .title-business {
   font-family: MulishBold;
   font-size: 2rem;
 }
 
 .g-container-business {
-  display: flex;
   margin-top: 8rem;
 }
 
@@ -136,12 +151,19 @@
   gap: 20px;
 }
 
+@media(max-width: 992px) {
+  .container-number {
+
+    grid-template-columns: 1fr;
+  }
+}
+
 .sentences-on-number {
   margin-top: -90px;
   margin-left: 47px;
 }
 
-.discover-app {
+/* .discover-app {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,13 +173,13 @@
   gap: 20px;
   width: 40%;
   font-size: 27px;
-}
+} */
 
-.g-container-meetup {
+/* .g-container-meetup {
   display: flex;
   gap: 50px;
   margin-top: 8rem;
-}
+} */
 
 .g-findus {
   margin-top: 8rem;
@@ -169,6 +191,7 @@
   object-fit: cover;
   margin-top: 2rem;
 }
+
 .img12 {
   width: 100%;
   height: 510px;
@@ -179,23 +202,25 @@
   font-size: 50px;
 }
 
-.left-block-meetup {
+/* .left-block-meetup {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-top: 35px;
   width: 100%;
-}
-.left-block-meetup p {
+} */
+
+/* .left-block-meetup p {
   width: 735px;
-}
-.right-block-meetup {
+} */
+
+/* .right-block-meetup {
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 100%;
   margin-top: -20px;
-}
+} */
 
 .date-meetup {
   color: #6d7c88;
@@ -216,6 +241,7 @@
 .design-systems {
   margin-top: 1rem;
 }
+
 .swift-meetup {
   margin-top: 1rem;
 }
@@ -227,34 +253,37 @@
 }
 
 input {
-  border-radius: 1em;
+  border-radius: .5em;
   border: none;
   width: 70%;
-  height: 75px;
+  height: 55px;
   align-self: flex-end;
+  padding-left: 15px;
 }
 
 ::placeholder {
-  font-size: 20px;
+  font-size: 15px;
   align-self: center;
-  padding-left: 25px;
   font-family: MulishButton;
 }
 
 .g-container-cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 55px;
-  padding-bottom: 10rem;
+  /* padding-bottom: 10rem; */
 }
 
 .card-aboutus {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 15px; */
   background: white;
-  width: 33%;
+  /* width: 33%;
+   */
+  height: 100%;
   padding: 1em;
-  border-radius: 1em;
+  /* border-radius: 1em; */
 }
 
 .pic-card {
@@ -277,7 +306,7 @@ input {
 }
 
 .findus {
-  font-size: 55px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
@@ -287,9 +316,11 @@ input {
   align-self: baseline;
   margin-top: 100px;
 }
+
 .googlemap {
   display: flex;
   gap: 50px;
+
   & h2 {
     font-size: 45px;
   }
@@ -310,14 +341,28 @@ input {
 
 .style_background_width {
   background-color: #f8f8f8;
+  position: relative;
+}
+
+
+.glipse-group-one img {
+  max-width: 505px;
   width: 100%;
 }
 
-.style_background_width > .g-container-width {
-  display: grid;
-  grid-template-columns: 1fr minmax(auto, 1660px) 1fr;
+/* @media(max-width: 550px) {
+  .glipse-group-one img {
+
+    max-width: 340px;
+  }
+} */
+
+.glipse-group-two img {
+  max-width: 390px;
+  width: 100%;
+  height: 370px;
 }
 
-.style_background_width > .g-container-width > * {
-  grid-column: 2;
+iframe.styles_map__NSGdk{
+  height: 350px;
 }

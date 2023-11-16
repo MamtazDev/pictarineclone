@@ -3,24 +3,21 @@
   src: url(../fonts/Mulish-VariableFont_wght.ttf) format("truetype");
 }
 
-.container-links {
-  display: flex;
-  justify-content: space-between;
-  padding: 3.5rem 0;
-  max-width: 1660px;
-  margin: auto;
+header {
+  padding: 25px 0;
 }
 
-.active-link {
+.active {
   font-weight: 900 !important;
+  transition: all linear .2s;
 }
 
-.links {
-  gap: 25px;
-  display: flex;
-  align-items: center;
-  font-size: 1.1rem;
-  font-family: Mulish;
+.nav-link {
+  color: inherit !important;
+}
+
+.nav-link:hover {
+  color: #db3753 !important;
 }
 
 .pictarinesGroupe {
@@ -63,11 +60,13 @@
 
 .container-links-bg-black {
   background-color: #171717;
+
   & p,
   a {
     color: white !important;
     font-weight: 600;
   }
+
   & a:hover {
     color: #db3753 !important;
   }

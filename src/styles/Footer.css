@@ -6,8 +6,9 @@
 
 .g-container-footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 8rem 0;
+  /* padding: 8rem 0; */
 }
 
 .links-footer {
