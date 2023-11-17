@@ -10,14 +10,14 @@
 .header-container {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   & img {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
   }
 
   & span {
-    font-size: 30px;
+    font-size: 20px;
     font-family: Mulish;
     font-weight: 700;
   }
@@ -29,10 +29,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 100%;
+
   & p {
-    font-weight: 700;
+    font-weight: 400;
     font-family: Mulish;
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 .container-problemsolvers-p {
@@ -42,10 +44,11 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  height: 100%;
   & p {
     font-weight: 800;
     font-family: Mulish;
-    font-size: 28px;
+    font-size: 16px;
   }
 }
 
@@ -53,14 +56,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: .5rem;
   & h3 {
     font-size: 30px;
   }
   & p {
-    font-weight: 700;
+    font-weight: 400;
     font-family: Mulish;
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 

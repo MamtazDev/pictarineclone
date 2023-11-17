@@ -79,12 +79,12 @@
   gap: 40px;
 }
 
-.left-block-dreamworks {
+/* .left-block-dreamworks {
   width: 40%;
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
+} */
 form {
   display: grid;
   grid-column-gap: 40px;

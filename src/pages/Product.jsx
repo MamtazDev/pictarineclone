@@ -16,7 +16,7 @@ function Product() {
             <div className="col-lg-6">
               <div className="g-container-block-left">
 
-                <h2 className="h2-block-1 pb-3">
+                <h2 className="h2-block-1 pb-3 mb-5">
                   Notre produit phare <br />
                   <span className="picta-app-italic">the Picta App</span>
                 </h2>
@@ -30,7 +30,10 @@ function Product() {
 
                 <div className="g-container-comments-stars">
                   <div className="stars">
-                    <p className="best-print-app">Best printing app!</p>
+                    <p className="best-print-app m-0 fs_14">
+                      Best printing app!
+                    </p>
+
                     <div className="g-container-stars">
                       <img
                         className="stars-icon"
@@ -60,11 +63,11 @@ function Product() {
                     </div>
                   </div>
 
-                  <p className="comment">
+                  <p className="comment m-0 fs_14">
                     Super quick, no hassle. No sign in required. I've use this app for
                     a few years now and it's always been great.
                   </p>
-                  <p>Stephen J.</p>
+                  <p className="fs_14">Stephen J.</p>
                 </div>
               </div>
             </div>

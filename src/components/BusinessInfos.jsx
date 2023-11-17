@@ -3,7 +3,7 @@ import "../styles/Home.css";
 
 function BusinessInfos({ number, title, text }) {
   const location = useLocation();
-  const isTechPage = location.pathname === "/Tech";
+  const isTechPage = location.pathname === "/tech";
   const numberClasses = isTechPage
     ? "number-business number-business-tech"
     : "number-business";

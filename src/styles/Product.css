@@ -24,7 +24,7 @@
 }
 
 .h2-block-1 {
-  font-size: 80px;
+  font-size: 60px;
   font-family: MulishButton;
   line-height: 0.9;
 }
@@ -33,7 +33,7 @@
   color: #db3753;
   font-style: italic;
   padding-left: 2rem;
-  font-size: 90px;
+  font-size: 75px;
   font-family: Mulish;
   font-weight: 900;
 }
@@ -44,15 +44,18 @@
 }
 
 .stars-icon {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
 }
 
 .stars {
   display: flex;
   gap: 10px;
   justify-content: space-between;
+  align-items: center;
 }
+
+
 
 .gif-smartphone {
   width: 480px;
@@ -169,7 +172,8 @@
 .left-block-3 {
 
   & h2 {
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: 700;
   }
 }
 

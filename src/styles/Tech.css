@@ -11,12 +11,18 @@
   src: url(../fonts/Mulish-Bold.ttf) format("truetype");
 }
 
-.g-container-tech {
+
+.tech_section{
+    background-color: #171717;
+      color: white;
+}
+
+/* .g-container-tech {
   display: grid;
   grid-template-columns: 1fr minmax(auto, 1660px) 1fr;
   background-color: #171717;
   color: white;
-}
+} */
 
 .g-container-tech > * {
   grid-column: 2;
@@ -39,10 +45,10 @@
 
 .left-block-first-block {
   align-self: center;
-  width: 50%;
+  /* width: 50%; */
   & h2 {
     font-family: Mulish;
-    font-size: 80px;
+    font-size: 60px;
     align-self: center;
     line-height: 0.9;
   }
@@ -62,7 +68,7 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 80px;
+  font-size: 60px;
   font-family: Mulish;
   font-weight: 900;
   margin-left: 20px;
@@ -78,7 +84,7 @@
   }
 }
 
-.right-block-second-block-tech {
+/* .right-block-second-block-tech {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -87,7 +93,7 @@
   & p {
     font-weight: 600;
   }
-}
+} */
 
 .matrix {
   color: #6aa46f;
@@ -119,12 +125,12 @@
   color: #6d7c88;
 }
 
-.h2-tech {
+/* .h2-tech {
   font-size: 3rem;
   font-family: Mulish;
   font-weight: 700;
   margin-top: 10rem;
-}
+} */
 
 .four-words-tech {
   font-family: "Courier New", Courier, monospace;
@@ -146,12 +152,12 @@
   display: flex;
   gap: 40px;
 }
-
+/*
 .g-container-description-tech {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
+} */
 
 .g-container-carousel-video-tech {
   padding-top: 8rem;

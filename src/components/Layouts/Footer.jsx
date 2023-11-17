@@ -7,7 +7,6 @@ import "../../styles/Home.css";
 import "../../styles/Footer.css";
 
 function Footer({ isProductPage, isTechPage }) {
-  const location = useLocation()
   const footerClasses = isProductPage
     ? "g-container-footer product-footer-bg-black"
     : "g-container-footer";

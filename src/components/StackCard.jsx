@@ -4,7 +4,7 @@ function StackCard({ logo, title, tags, stacklogo }) {
   return (
     <div className="container-stackcard">
       <div className="first-block-stackcard">
-        <img src={logo} alt="" />
+        <img className="img-fluid" src={logo} alt="" />
         <p>{title}</p>
       </div>
       <span className="second-block-stackcard">
@@ -18,7 +18,7 @@ function StackCard({ logo, title, tags, stacklogo }) {
       </span>
       <span className="third-block-stackcard">
         {stacklogo.map((logo, id) => {
-          return <img key={id} src={logo} />;
+          return <img className="img-fluid" key={id} src={logo} />;
         })}
       </span>
     </div>

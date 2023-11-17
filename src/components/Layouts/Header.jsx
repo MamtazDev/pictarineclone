@@ -5,11 +5,12 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 
 const Header = () => {
   const location = useLocation();
+  const isTechPage = location.pathname === "/tech";
 
   return (
     <header>
 
-      <Navbar className="bg-white py-4" expand="lg" fixed="top">
+      <Navbar className={`${isTechPage ? 'bg-black text-white py-4' : 'bg-white py-4'}`} expand="lg" fixed="top">
         <Container>
 
           <Navbar.Brand>

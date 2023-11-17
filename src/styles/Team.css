@@ -30,3 +30,8 @@
 .peoples-card {
   font-size: 80px;
 }
+
+.btn-category-active {
+  background-color: #6d7c88 !important;
+  color: white;
+}

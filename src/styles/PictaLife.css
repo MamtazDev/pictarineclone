@@ -38,11 +38,11 @@
   gap: 50px;
 }
 
-.left-block-2-pictalife {
+/* .left-block-2-pictalife {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
+} */
 
 .right-img-block-2-pictalife {
   align-self: center;
@@ -52,13 +52,14 @@
 }
 
 .b-memories {
-  font-size: 3rem;
+  font-size: 40px;
   font-family: Mulish;
   font-weight: 700;
 }
 
 .last-seminar {
-  font-size: 40px;
+  font-size: 32px;
+  font-weight: bold;
   font-family: Mulish;
 }
 
@@ -74,16 +75,16 @@
   padding: 2rem 0;
 }
 
-.middle-block-4-pictalife {
+/* .middle-block-4-pictalife {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
-.block-4-pictalife {
+/* .block-4-pictalife {
   display: flex;
   padding: 3.5rem 0;
-}
+} */
 
 .post-it-fire {
   width: 567px;
@@ -105,7 +106,7 @@
   }
 }
 
-.block-6-pictalife {
+/* .block-6-pictalife {
   display: flex;
   padding: 3.5rem 0;
   gap: 50px;
@@ -113,12 +114,12 @@
     width: 377px;
     height: 400px;
   }
-}
+} */
 
-.discover-by-ceo {
+/* .discover-by-ceo {
   width: 35%;
-}
-/* 
+} */
+/*
 .carousel-1-pictalife {
   font-size: 60px;
   padding: 3.5rem 0;
@@ -129,7 +130,7 @@
   padding: 3.5rem 0;
 }
 
-.block-7-pictalife {
+/* .block-7-pictalife {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -145,7 +146,7 @@
     align-items: center;
     line-height: 1.1;
   }
-}
+} */
 
 .picta-app {
   color: #db3753;

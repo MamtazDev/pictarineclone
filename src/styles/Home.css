@@ -113,7 +113,8 @@
 }
 
 .sobusiness {
-  font-size: 50px;
+  font-size: 35px;
+  margin-bottom: 40px;
 }
 
 .img1 {
@@ -124,9 +125,9 @@
 }
 
 .number-business {
-  font-size: 8rem;
+  font-size: 80px;
   font-family: MulishBold;
-  color: #e6eef0;
+  color: #e6eef059;
 }
 
 @media(max-width: 550px) {
@@ -144,12 +145,12 @@
   margin-top: 8rem;
 }
 
-.container-number {
+/* .container-number {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-}
+} */
 
 @media(max-width: 992px) {
   .container-number {
@@ -159,7 +160,7 @@
 }
 
 .sentences-on-number {
-  margin-top: -90px;
+  margin-top: -80px;
   margin-left: 47px;
 }
 

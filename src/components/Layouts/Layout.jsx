@@ -6,13 +6,12 @@ import Header from "./Header";
 const Layout = () => {
   const location = useLocation();
   const isProductPage = location.pathname === "/product";
-  // const isTechPage = location.pathname === "/Tech";
+  const isTechPage = location.pathname === "/tech";
   return (
     <>
       <Header />
       <Outlet />
-      {/* isProductPage={isProductPage} isTechPage={isTechPage} */}
-      <Footer isProductPage={isProductPage} />
+      <Footer isProductPage={isProductPage} isTechPage={isTechPage} />
     </>
   );
 };
