@@ -1,10 +1,10 @@
 import Plogo from "../../assets/Img/Plogo.png";
+import linkedin from "../../assets/Img/linkedinIcon.svg";
 import { Link, useLocation } from "react-router-dom";
 import insta from "../../assets/Img/instaLogo.svg";
-import linkedin from "../../assets/Img/linkedinIcon.svg";
-import wttj from "../../assets/Img/welcometothejungleLogo.svg";
 import "../../styles/Home.css";
 import "../../styles/Footer.css";
+import wttj from "../../assets/Img/welcometothejungleLogo.svg";
 
 function Footer({ isProductPage, isTechPage }) {
   const footerClasses = isProductPage

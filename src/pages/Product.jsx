@@ -1,9 +1,9 @@
 import "../styles/Product.css";
-import stars from "../assets/Img/yellowStar.png";
 import ProductCards from "../components/ProductCards";
 import productcards from "../utils/productcards.json";
 import description from "../utils/description.json";
 import Description from "../components/Description";
+import stars from "../assets/Img/yellowStar.png";
 import { Link } from "react-router-dom";
 
 function Product() {
