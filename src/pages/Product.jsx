@@ -3,8 +3,8 @@ import ProductCards from "../components/ProductCards";
 import productcards from "../utils/productcards.json";
 import description from "../utils/description.json";
 import Description from "../components/Description";
-import stars from "../assets/Img/yellowStar.png";
 import { Link } from "react-router-dom";
+import starIcon from '../assets/Img/yellow-star.png'
 
 function Product() {
   return (
@@ -37,27 +37,27 @@ function Product() {
                     <div className="g-container-stars">
                       <img
                         className="stars-icon"
-                        src={stars}
+                        src={starIcon}
                         alt="image d'étoile jaune"
                       />
                       <img
                         className="stars-icon"
-                        src={stars}
+                        src={starIcon}
                         alt="image d'étoile jaune"
                       />
                       <img
                         className="stars-icon"
-                        src={stars}
+                        src={starIcon}
                         alt="image d'étoile jaune"
                       />
                       <img
                         className="stars-icon"
-                        src={stars}
+                        src={starIcon}
                         alt="image d'étoile jaune"
                       />
                       <img
                         className="stars-icon"
-                        src={stars}
+                        src={starIcon}
                         alt="image d'étoile jaune"
                       />
                     </div>

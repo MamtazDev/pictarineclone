@@ -1,10 +1,10 @@
 import Plogo from "../../assets/Img/Plogo.png";
-import linkedin from "../../assets/Img/linkedinIcon.svg";
 import { Link, useLocation } from "react-router-dom";
 import insta from "../../assets/Img/instaLogo.svg";
 import "../../styles/Home.css";
 import "../../styles/Footer.css";
-import wttj from "../../assets/Img/welcometothejungleLogo.svg";
+import iconLikedin from "../../assets/Img/icon-linkedin.png";
+import wtj from "../../assets/Img/wtj.png"
 
 function Footer({ isProductPage, isTechPage }) {
   const footerClasses = isProductPage
@@ -33,13 +33,13 @@ function Footer({ isProductPage, isTechPage }) {
               <Link to={"https://www.instagram.com/pictarine/"}>
                 <img src={insta} />
               </Link>
-              <Link to={"https://www.linkedin.com/company/pictarine/"}>
-                <img src={linkedin} alt="linkedin logo" />
+              <Link to={"https://www.iconLikedin.com/company/pictarine/"}>
+                <img src={iconLikedin} alt="iconLikedin logo" />
               </Link>
               <Link
                 to={"https://www.welcometothejungle.com/fr/companies/pictarine"}
               >
-                <img className="wttj" src={wttj} alt="instagram logo" />
+                <img className="wttj" src={wtj} alt="instagram-logo" />
               </Link>
             </div>
           </div>
