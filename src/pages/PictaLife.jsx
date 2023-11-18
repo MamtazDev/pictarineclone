@@ -1,8 +1,8 @@
 import "../styles/PictaLife.css";
 import { Link } from "react-router-dom";
 import insta from "../assets/Img/instaLogo.svg";
-import linkedin from "../assets/Img/Linkedin icon.svg";
-import wttj from "../assets/Img/welcometothejungle logo.svg";
+import linkedin from "../assets/Img/linkedinIcon.svg";
+import wttj from "../assets/Img/welcometothejungleLogo.svg";
 import Multislider from './../components/Multislider';
 import Life from "../components/life/Life";
 

@@ -1,5 +1,5 @@
 import "../styles/Product.css";
-import stars from "../assets/Img/yellow Star.png";
+import stars from "../assets/Img/yellowStar.png";
 import ProductCards from "../components/ProductCards";
 import productcards from "../utils/productcards.json";
 import description from "../utils/description.json";
