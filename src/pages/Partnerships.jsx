@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import partnershipscards from "../utils/partnerships.json";
 import PartnerShips from "../components/PartnerShips";
 import form from "../assets/Img/form.png";
-import "../styles/Partnerships.css";
+import '../styles/PartnerShip.css'
+
 
 function Partnerships() {
   return (

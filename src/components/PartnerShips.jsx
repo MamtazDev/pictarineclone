@@ -1,4 +1,4 @@
-import "../styles/PartnerShips.css";
+import '../styles/PartnerShip.css'
 function PartnerShips({ logo, title, text }) {
   return (
     <div className="g-container-partnerships-card h-100">
