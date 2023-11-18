@@ -1,8 +1,19 @@
 import IsotopeFilter from "../components/isotopeFilter/IsotopeFilter";
 import "../styles/Team.css";
 import { Link } from "react-router-dom";
+import { pictaTeam } from "../utils/pictaTeam";
+import { useState } from "react";
 function Team() {
-  const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+
+  const [selectedTab, setSelectedTab] = useState('all'); // Default to show all data
+
+  const handleTabClick = (type) => {
+    setSelectedTab(type);
+  };
+
+  const filteredData = selectedTab === 'all'
+    ? pictaTeam
+    : pictaTeam.filter(item => item.type === selectedTab);
   return (
     <>
       <div className="la_team">
@@ -24,8 +35,56 @@ function Team() {
 
         <div className="masonaary-items">
           <div className="container">
-            <IsotopeFilter items={items} />
-      
+            <div className='btn-category d-flex flex-wrap gap-4'>
+              {["all", 'product', 'people', 'marketing', 'finance', 'engineering', 'partnership',].map((type, index) => (
+                <button key={index} onClick={() => handleTabClick(type)} className="text-capitalize">
+                  {type}
+                </button>
+              ))}
+            </div>
+
+            <div className="row">
+              {
+                selectedTab === 'all' && (
+                  <div className="col-lg-3">
+                    <div className="d-flex align-items-end h-100 p-4">
+                      <div>
+                        <h1>49</h1>
+                        <h2>people</h2>
+                        <p>Mais on grandit très vite!</p>
+                      </div>
+                    </div>
+                  </div>
+                )
+
+              }
+
+              {filteredData.map((item) => (
+                <div className="col-lg-3 mb-4" key={item.id}>
+                  <div className="team_info_wrapper position-relative">
+                    <div className="team_img">
+                      <img className="img-fluid" src={item.img} alt={item.name} />
+                    </div>
+                    <div className="team_des position-absolute top-0">
+                      <div className="team_info position-absolute bottom-0">
+                        <p className="fw-bold fs-4 mb-0">{item.name}</p>
+                        <p>{item.title}</p>
+                      </div>
+                      <div className="team_hover_info">
+                        <p className="fw-bold fs-4 mb-0">{item.name}</p>
+                        <p>{item.title}</p>
+                        <p>{item.otherInfoOne}</p>
+                        <p>{item.otherInfoTwo}</p>
+                        <p>{item.otherInfoThree}</p>
+                        <p>{item.otherInfoFour}</p>
+                        <p>{item.otherInfoFive}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
 

@@ -9,18 +9,14 @@ const Header = () => {
 
   return (
     <header>
-
       <Navbar className={`${isTechPage ? 'bg-black text-white py-4' : 'bg-white py-4'}`} expand="lg" fixed="top">
         <Container>
-
           <Navbar.Brand>
             <Link to={'/'}>
               <img className="img-fluid Logo" src={Plogo} alt="" />
             </Link>
           </Navbar.Brand>
-
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className={location.pathname === "/tech" ? "bg-white" : ""} />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
 
@@ -40,7 +36,7 @@ const Header = () => {
                 La Team
               </Link>
 
-              <Link to={'/tech'} className={location.pathname === "/tech" ? "nav-link active" : "nav-link"}>
+              <Link to={'/tech'} className={location.pathname === "/tech" ? "nav-link active " : "nav-link"}>
                 La Tech
               </Link>
 

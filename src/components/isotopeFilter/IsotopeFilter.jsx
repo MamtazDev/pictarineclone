@@ -37,13 +37,7 @@ const IsotopeFilter = ({ items }) => {
 
     return (
         <div className='isotope_container'>
-            <div className='btn-category'>
-                {filterButtons.map((button, index) => (
-                    <button key={index} onClick={() => handleFilterChange(button.key)}>
-                        {button.label}
-                    </button>
-                ))}
-            </div>
+           
 
             <div className="isotope-container">
                 {items.map((item, index) => (

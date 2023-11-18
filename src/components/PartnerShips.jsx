@@ -1,9 +1,9 @@
 import "../styles/PartnerShips.css";
 function PartnerShips({ logo, title, text }) {
   return (
-    <div className="g-container-partnerships-card">
+    <div className="g-container-partnerships-card h-100">
       <div className="container-partnerships-card">
-        <img src={logo} alt="" />
+        <img className="img-fluid" src={logo} alt="" />
         <h2>{title}</h2>
         <p>{text}</p>
       </div>

@@ -7,13 +7,18 @@ header {
   padding: 25px 0;
 }
 
-.active {
+/* .active {
   font-weight: 900 !important;
   transition: all linear .2s;
+} */
+
+a.nav-link.active {
+  font-weight: 700 !important;
 }
 
 .nav-link {
   color: inherit !important;
+  padding: 12 12px !important;
 }
 
 .nav-link:hover {
@@ -35,7 +40,7 @@ header {
 }
 
 .xplore-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 2.5rem;
   white-space: nowrap;
@@ -70,4 +75,20 @@ header {
   & a:hover {
     color: #db3753 !important;
   }
+}
+
+button.navbar-toggler.collapsed {
+  border-color: transparent;
+}
+
+button.navbar-toggler {
+  border: transparent;
+}
+
+button.navbar-toggler:focus {
+  box-shadow: unset !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 !important;
 }

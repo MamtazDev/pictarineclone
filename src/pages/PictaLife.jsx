@@ -45,7 +45,7 @@ function PictaLife() {
                     width="100%"
                     height="550"
                     src="https://www.youtube.com/embed/NOILceT9-5c"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
                 </div>
                 <h2 className="last-seminar">Notre dernier séminaire</h2>
@@ -221,7 +221,7 @@ function PictaLife() {
                   src="https://www.youtube.com/embed/AwrZoNgM6HU?si=-vEVAVMpw7JCuI58"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
             </div>

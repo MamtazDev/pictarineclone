@@ -37,6 +37,7 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+
   & button {
     background-color: #e6eef0;
     border-radius: 0.4rem;
@@ -44,6 +45,7 @@
     cursor: pointer;
     border: none;
     font-family: Mulish;
+
     &:focus {
       color: #fff;
       background-color: #6d7c88;
@@ -53,6 +55,7 @@
 
 .container-btn-category {
   margin-top: 3rem;
+
   & img {
     width: 34px;
     height: 34px;
@@ -85,19 +88,25 @@
   flex-direction: column;
   gap: 20px;
 } */
-form {
+/* form {
   display: grid;
   grid-column-gap: 40px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
   width: 100%;
-}
+} */
 
 .form {
   background-color: #f8f8f8;
   padding: 3rem;
   font-family: Mulish;
   font-size: 1.2rem;
+}
+
+@media(max-width: 550px){
+  .form{
+    padding: 1.5rem
+  }
 }
 
 .text {
@@ -110,6 +119,7 @@ form {
   margin-bottom: 3rem;
   position: relative;
   width: 100%;
+
   & input {
     border: none;
     display: block;
@@ -117,10 +127,12 @@ form {
     width: 100%;
     border-radius: 0.4rem;
     background-color: #fff;
+
     &:focus {
       outline: none;
     }
-    &:focus + label {
+
+    &:focus+label {
       background-color: #fff;
       padding: 0.3rem;
       border-radius: 0.8rem;
@@ -131,6 +143,7 @@ form {
       transition: all 0.3s ease-in-out;
     }
   }
+
   & label {
     color: #a4a4a4;
     font-size: 1.2rem;
@@ -154,6 +167,7 @@ form {
   transition: all 0.2s ease-out;
   font-size: 1.2rem;
   font-family: MulishButton;
+
   &:visited {
     color: white;
   }
@@ -169,6 +183,7 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   & button {
     width: 20%;
     align-self: flex-end;
@@ -223,6 +238,7 @@ form {
 .g-container-slides-rejoinsnous::-webkit-scrollbar {
   display: none;
 }
+
 .container-slides-recrutment {
   display: flex;
   flex-direction: row;
@@ -235,9 +251,28 @@ form {
   gap: 50px;
   position: relative;
   display: flex;
-  padding-bottom: 2rem;
+  padding-bottom: 7rem;
   margin-bottom: 3rem;
+  overflow-y: hidden;
 }
+
+.process-recrutment-slides::-webkit-scrollbar {
+  width: 1px;
+  /* Set the width of the scrollbar */
+}
+
+.process-recrutment-slides::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* Set the color of the thumb (the draggable part) */
+}
+
+.process-recrutment-slides::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Set the color of the track (the non-draggable part) */
+}
+
+
+
 .process-recrutment-slides:before {
   content: "";
   display: block;
@@ -249,6 +284,8 @@ form {
   left: 0;
   z-index: 1;
 }
+
+
 
 .g-discover-rejoinsnous {
   display: flex;
@@ -287,10 +324,11 @@ form {
   flex-direction: column;
   gap: 50px;
 }
-.right-block-last-rejoinsnous {
+
+/* .right-block-last-rejoinsnous {
   padding-left: 8rem;
   display: flex;
-}
+} */
 
 .block-diffpicta {
   display: flex;

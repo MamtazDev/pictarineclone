@@ -7,6 +7,7 @@ import Team from './../pages/Team';
 import Tech from './../pages/Tech';
 import PartnerShips from './../components/PartnerShips';
 import RejoinsNous from './../pages/RejoinsNous';
+import Partnerships from './../pages/Partnerships';
 
 export const router = createBrowserRouter([
     {
@@ -40,7 +41,7 @@ export const router = createBrowserRouter([
 
             {
                 path: '/partnerships',
-                element: <PartnerShips />
+                element: <Partnerships />
             },
 
             {

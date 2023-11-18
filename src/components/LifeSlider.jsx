@@ -71,8 +71,8 @@ const LifeSlider = () => {
   };
 
   function CustomPrevArrow(props) {
-    const { currentSlide } = props;
-    if (currentSlide === 0) {
+    const { currentslide } = props;
+    if (currentslide === 0) {
       return null;
     }
     return (
@@ -83,8 +83,8 @@ const LifeSlider = () => {
   }
 
   function CustomNextArrow(props) {
-    const { currentSlide, slideCount } = props;
-    if (currentSlide === slideCount - 3) {
+    const { currentslide, slideCount } = props;
+    if (currentslide === slideCount - 3) {
       return null;
     }
     return (

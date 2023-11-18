@@ -66,14 +66,35 @@ button {
   line-height: 50px;
 }
 
+@media(max-width: 550px) {
+  .fs_40px {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
 .fs_60 {
   font-size: 60px;
   line-height: 70px;
 }
 
+@media(max-width: 550px) {
+  .fs_60 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
 .fs_70 {
   font-size: 70px;
   line-height: 80px;
+}
+
+@media(max-width: 550px) {
+  .fs_70 {
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
 
 /* Slider Css */

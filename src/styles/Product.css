@@ -29,6 +29,16 @@
   line-height: 0.9;
 }
 
+@media(max-width: 550px) {
+  .h2-block-1 {
+    font-size: 45px;
+  }
+
+ span.picta-app-italic {
+    font-size: 40px;
+  }
+}
+
 .picta-app-italic {
   color: #db3753;
   font-style: italic;
@@ -145,6 +155,16 @@
     font-style: italic;
     font-size: 65px;
     padding-left: 1rem;
+  }
+}
+
+@media(max-width: 550px) {
+  .h2-block-3 {
+    font-size: 40px;
+  }
+
+  span.span-block-3 {
+    font-size: 45px;
   }
 }
 

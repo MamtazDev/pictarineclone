@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import MultiRowSlider from "./multiRowSlider/MultiRowSlider";
 
 const MultipleRows = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentslide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
   var settings = {

@@ -94,13 +94,15 @@
 .custom-arrows .leftArrow {
     left: 13%;
     top: 50%;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 999;
 }
 
 .custom-arrows .rightArrow {
     right: 13%;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 999;
 }
 
 

@@ -25,8 +25,8 @@ const Multislider = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
+    // prevArrow: <CustomPrevArrow />,
+    // nextArrow: <CustomNextArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -57,10 +57,9 @@ const Multislider = () => {
     ],
   };
 
-  // Custom arrow component for the "Previous" button
   function CustomPrevArrow(props) {
-    const { currentSlide } = props;
-    if (currentSlide === 0) {
+    const { currentslide } = props;
+    if (currentslide === 0) {
       return null;
     }
     return (
@@ -70,18 +69,17 @@ const Multislider = () => {
     );
   }
 
-  // Custom arrow component for the "Next" button
-  function CustomNextArrow(props) {
-    const { currentSlide, slideCount } = props;
-    if (currentSlide === slideCount - 3) {
-      return null; // Hide the "Next" arrow on the last slide
-    }
-    return (
-      <button {...props} className="slick-arrow custom-next-arrow border-0">
-        <FaChevronRight />
-      </button>
-    );
-  }
+  // function CustomNextArrow(props) {
+  //   const { currentslide, slideCount } = props;
+  //   if (currentslide === slideCount - 3) {
+  //     return null;
+  //   }
+  //   return (
+  //     <button {...props} className="slick-arrow custom-next-arrow border-0">
+  //       <FaChevronRight />
+  //     </button>
+  //   );
+  // }
 
   return (
     <div className="multi_slider position-relative">
