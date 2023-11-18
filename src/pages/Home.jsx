@@ -36,9 +36,9 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-8">
-              <div className="pictarine_group img-fluid">
+              <div className="pictarine_group">
                 <img
-                  className="pictarinesGroupe"
+                  className="pictarinesGroupe img-fluid"
                   src="https://a.storyblok.com/f/189744/3177x2116/854381f167/team-pictarine.jpg"
                   alt="Photo de groupe de la société Pictarine"
                 />

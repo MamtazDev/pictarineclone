@@ -1,4 +1,3 @@
-import Navbar from "./Header";
 import Footer from "./Footer";
 import { Outlet } from "react-router";
 import { useLocation } from "react-router";
